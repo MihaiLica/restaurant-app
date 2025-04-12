@@ -1,0 +1,125 @@
+/* Navbar Styling */
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;  /* Dark background */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Logo Styling */
+  .app__navbar-logo img {
+    width: 150px;  /* Adjust logo size as needed */
+  }
+  
+  /* Links Styling */
+  .app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+  
+  /* Fancy Golden Text Styling for Navbar Links */
+  .app__navbar-links li a {
+    color: #FFD700;  /* Realistic gold color */
+    text-decoration: none;
+    font-family: 'Cinzel', serif;  /* Fancy font for elegance */
+    font-weight: 700;  /* Make it bolder */
+    font-size: 1.25rem;  /* Bigger font size */
+    letter-spacing: 1px;  /* Space out the letters a bit */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-transform: uppercase;  /* Uppercase text for a fancy feel */
+  }
+  
+  /* Glow Effect on Hover */
+  .app__navbar-links li a:hover {
+    color: #ffcc00;  /* Slightly brighter gold on hover */
+    text-shadow: 0 0 8px #FFD700, 0 0 12px #FFD700, 0 0 16px #FFD700, 0 0 20px #FFD700;
+  }
+  
+  /* Login and Table Buttons - Same Styling */
+  .app__navbar-login a {
+    color: #FFD700;  /* Realistic gold color */
+    text-decoration: none;
+    font-family: 'Cinzel', serif;  /* Fancy font */
+    font-weight: 700;  /* Bold font */
+    font-size: 1.25rem;  /* Bigger font size */
+    letter-spacing: 1px;  /* Space out the letters */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-transform: uppercase;
+    margin: 0 1rem;  /* Space between buttons */
+  }
+  
+  .app__navbar-login a:hover {
+    color: #ffcc00;  /* Slightly brighter gold on hover */
+    text-shadow: 0 0 8px #FFD700, 0 0 12px #FFD700, 0 0 16px #FFD700, 0 0 20px #FFD700;
+  }
+  
+  /* Small Screen Hamburger Menu */
+  .app__navbar-smallscreen {
+    display: none;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media screen and (max-width: 1150px) {
+    .app__navbar-links {
+      display: none;
+    }
+  
+    .app__navbar-smallscreen {
+      display: flex;
+    }
+  }
+  
+  /* Styling for small screen menu */
+  .app__navbar-smallscreen_overlay {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 30px;
+    color: #FFD700;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .app__navbar-smallscreen_links li {
+    color: #FFD700;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+    margin: 2rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .app__navbar-smallscreen_links li:hover {
+    color: #fff;
+    text-shadow: 0 0 8px #FFD700, 0 0 12px #FFD700, 0 0 16px #FFD700, 0 0 20px #FFD700;
+  }
+  
+  /* Google Font for Cinzel */
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+  
