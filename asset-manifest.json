@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "//mihailica.github.io/restaurant-app/static/css/main.d43d0dd5.css",
+    "main.js": "//mihailica.github.io/restaurant-app/static/js/main.6e3b0e5f.js",
+    "static/media/meal.mp4": "//mihailica.github.io/restaurant-app/static/media/meal.a1b6c6dc67dfa2f99343.mp4",
+    "static/media/menu.png": "//mihailica.github.io/restaurant-app/static/media/menu.a8287c67809afebcc280.png",
+    "static/media/gallery04.png": "//mihailica.github.io/restaurant-app/static/media/gallery04.c36a695f8a3b9d311106.png",
+    "static/media/gallery03.png": "//mihailica.github.io/restaurant-app/static/media/gallery03.b2d50180e8590d4dd330.png",
+    "static/media/gallery02.png": "//mihailica.github.io/restaurant-app/static/media/gallery02.27663bd9016b72ccd328.png",
+    "static/media/gallery01.png": "//mihailica.github.io/restaurant-app/static/media/gallery01.f2cbffe3049d6f91e0df.png",
+    "static/media/sign.png": "//mihailica.github.io/restaurant-app/static/media/sign.53233c39e8f2ac9d5dbe.png",
+    "static/media/knife.png": "//mihailica.github.io/restaurant-app/static/media/knife.1121c0a5afb62acb31cb.png",
+    "static/media/overlaybg.png": "//mihailica.github.io/restaurant-app/static/media/overlaybg.165362eea72d1614ae28.png",
+    "static/media/findus.png": "//mihailica.github.io/restaurant-app/static/media/findus.7f1b69e588212fad8add.png",
+    "static/media/bg.png": "//mihailica.github.io/restaurant-app/static/media/bg.0f44fb64bdaf7a3e41eb.png",
+    "static/media/laurels.png": "//mihailica.github.io/restaurant-app/static/media/laurels.c2ce871529580938aab5.png",
+    "static/media/welcome.png": "//mihailica.github.io/restaurant-app/static/media/welcome.2a5047a1e049439475ee.png",
+    "static/media/chef.png": "//mihailica.github.io/restaurant-app/static/media/chef.1e31fb92011a13e20862.png",
+    "static/media/perinita.png": "//mihailica.github.io/restaurant-app/static/media/perinita.825b53d52dddf0fd7bbc.png",
+    "static/media/logo.png": "//mihailica.github.io/restaurant-app/static/media/logo.0286194c03de0a90dac9.png",
+    "static/media/award02.png": "//mihailica.github.io/restaurant-app/static/media/award02.8bbdd51499739653b003.png",
+    "static/media/award05.png": "//mihailica.github.io/restaurant-app/static/media/award05.48a7f5206184009dcb29.png",
+    "static/media/award01.png": "//mihailica.github.io/restaurant-app/static/media/award01.361a4bc44b59b55abeda.png",
+    "static/media/award03.png": "//mihailica.github.io/restaurant-app/static/media/award03.3f7ee934c17dccbd5fc6.png",
+    "index.html": "//mihailica.github.io/restaurant-app/index.html",
+    "static/media/spoon.svg": "//mihailica.github.io/restaurant-app/static/media/spoon.d079f43fbcf509908d3865293080795a.svg",
+    "main.d43d0dd5.css.map": "//mihailica.github.io/restaurant-app/static/css/main.d43d0dd5.css.map",
+    "main.6e3b0e5f.js.map": "//mihailica.github.io/restaurant-app/static/js/main.6e3b0e5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d43d0dd5.css",
+    "static/js/main.6e3b0e5f.js"
+  ]
+}
