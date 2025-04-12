@@ -119,6 +119,25 @@
     color: #fff;
     text-shadow: 0 0 8px #FFD700, 0 0 12px #FFD700, 0 0 16px #FFD700, 0 0 20px #FFD700;
   }
+  .login__btn {
+    background: linear-gradient(145deg, #FFD700, #b8860b);
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .login__btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.7);
+  }
   
   /* Google Font for Cinzel */
   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');

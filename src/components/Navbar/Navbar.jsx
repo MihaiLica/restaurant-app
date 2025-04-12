@@ -2,10 +2,21 @@ import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import images from '../../constants/images';
+import { auth, provider } from '../../firebase-config';
+import { signInWithPopup } from 'firebase/auth';
 import './Navbar.css';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
+  const handleGoogleLogin = async () => {
+    try {
+      const result = await signInWithPopup(auth, provider);
+      console.log("Logged in as:", result.user.displayName);
+      alert(`Welcome, ${result.user.displayName}!`);
+    } catch (err) {
+      console.error("Login failed", err);
+    }
+  };
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -19,7 +30,7 @@ const Navbar = () => {
         <li className="p__opensans"><a href="#contact">Contact</a></li>
       </ul>
       <div className="app__navbar-login">
-        <a href="#login" className="p__opensans">Log In / Registration</a>
+      <button onClick={handleGoogleLogin} className="login__btn">Login with Google</button>
         <div />
         <a href="/" className="p__opensans">Book Table</a>
       </div>
