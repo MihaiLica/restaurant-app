@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #111;  /* Dark background */
+    background: #111;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
@@ -13,7 +13,7 @@
   
   /* Logo Styling */
   .app__navbar-logo img {
-    width: 150px;  /* Adjust logo size as needed */
+    width: 150px;
   }
   
   /* Links Styling */
@@ -30,40 +30,95 @@
     cursor: pointer;
   }
   
-  /* Fancy Golden Text Styling for Navbar Links */
   .app__navbar-links li a {
-    color: #FFD700;  /* Realistic gold color */
+    color: #FFD700;
     text-decoration: none;
-    font-family: 'Cinzel', serif;  /* Fancy font for elegance */
-    font-weight: 700;  /* Make it bolder */
-    font-size: 1.25rem;  /* Bigger font size */
-    letter-spacing: 1px;  /* Space out the letters a bit */
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-transform: uppercase;  /* Uppercase text for a fancy feel */
-  }
-  
-  /* Glow Effect on Hover */
-  .app__navbar-links li a:hover {
-    color: #ffcc00;  /* Slightly brighter gold on hover */
-    text-shadow: 0 0 8px #FFD700, 0 0 12px #FFD700, 0 0 16px #FFD700, 0 0 20px #FFD700;
-  }
-  
-  /* Login and Table Buttons - Same Styling */
-  .app__navbar-login a {
-    color: #FFD700;  /* Realistic gold color */
-    text-decoration: none;
-    font-family: 'Cinzel', serif;  /* Fancy font */
-    font-weight: 700;  /* Bold font */
-    font-size: 1.25rem;  /* Bigger font size */
-    letter-spacing: 1px;  /* Space out the letters */
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
     text-transform: uppercase;
-    margin: 0 1rem;  /* Space between buttons */
   }
   
-  .app__navbar-login a:hover {
-    color: #ffcc00;  /* Slightly brighter gold on hover */
+  .app__navbar-links li a:hover {
+    color: #ffcc00;
     text-shadow: 0 0 8px #FFD700, 0 0 12px #FFD700, 0 0 16px #FFD700, 0 0 20px #FFD700;
+  }
+  
+  /* Login Section Styling */
+  .app__navbar-login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Button Styling */
+  .login__btn {
+    background: linear-gradient(145deg, #FFD700, #b8860b);
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .login__btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.7);
+  }
+  
+  .book-table__btn {
+    color: #FFD700;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 8px;
+  }
+  
+  .book-table__btn:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 8px #FFD700, 0 0 12px #FFD700, 0 0 16px #FFD700, 0 0 20px #FFD700;
+  }
+  
+  /* User Info Styling */
+  .user__info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .user__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FFD700;
+  }
+  
+  .logout__btn {
+    background: transparent;
+    color: #FFD700;
+    padding: 8px 16px;
+    border: 1px solid #FFD700;
+    border-radius: 8px;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logout__btn:hover {
+    background: rgba(255, 215, 0, 0.1);
   }
   
   /* Small Screen Hamburger Menu */
@@ -71,7 +126,7 @@
     display: none;
   }
   
-  /* Adjustments for smaller screens */
+  /* Mobile Menu Styling */
   @media screen and (max-width: 1150px) {
     .app__navbar-links {
       display: none;
@@ -82,7 +137,6 @@
     }
   }
   
-  /* Styling for small screen menu */
   .app__navbar-smallscreen_overlay {
     background: #000;
     position: fixed;
@@ -97,7 +151,7 @@
     z-index: 100;
   }
   
-  .app__navbar-smallscreen_overlay .overlay__close {
+  .overlay__close {
     font-size: 30px;
     color: #FFD700;
     cursor: pointer;
@@ -106,39 +160,66 @@
     right: 20px;
   }
   
-  .app__navbar-smallscreen_links li {
-    color: #FFD700;
-    font-size: 2rem;
-    font-family: 'Cinzel', serif;
-    margin: 2rem;
-    cursor: pointer;
+  .app__navbar-smallscreen_links {
+    list-style: none;
     text-align: center;
   }
   
-  .app__navbar-smallscreen_links li:hover {
+  .app__navbar-smallscreen_links li {
+    margin: 2rem;
+    cursor: pointer;
+  }
+  
+  .app__navbar-smallscreen_links li a {
+    color: #FFD700;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+  }
+  
+  .app__navbar-smallscreen_links li a:hover {
     color: #fff;
     text-shadow: 0 0 8px #FFD700, 0 0 12px #FFD700, 0 0 16px #FFD700, 0 0 20px #FFD700;
   }
-  .login__btn {
-    background: linear-gradient(145deg, #FFD700, #b8860b);
-    color: white;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 8px;
+  
+  /* Mobile Button Styling */
+  .mobile-login__btn,
+  .mobile-logout__btn {
+    background: transparent;
+    color: #FFD700;
+    font-size: 1.5rem;
     font-family: 'Cinzel', serif;
-    font-size: 1.1rem;
+    border: none;
     cursor: pointer;
-    margin-right: 1rem;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
-    transition: all 0.3s ease;
-    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
   }
   
-  .login__btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.7);
+  .mobile-login__btn:hover,
+  .mobile-logout__btn:hover {
+    color: #fff;
+    text-shadow: 0 0 8px #FFD700, 0 0 12px #FFD700, 0 0 16px #FFD700, 0 0 20px #FFD700;
+  }
+  .user__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FFD700;
+  }
+  
+  .avatar__placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFD700;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid #FFD700;
   }
   
   /* Google Font for Cinzel */
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-  
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap');
